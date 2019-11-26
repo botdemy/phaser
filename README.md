@@ -1,2 +1,2 @@
-# phaser lesson template
+# Phaser lesson template
 

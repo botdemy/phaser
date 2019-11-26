@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Your Game Title Here</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/3.19.0/phaser.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+
+    var config = {
+        type: Phaser.AUTO,
+	//todo: set canvas size
+        width: 640,
+        height: 480,
+	//end todo
+
+        physics: {
+            //todo: add gravity
+            default: 'arcade'
+            //end todo
+        },
+
+        scene: {
+            preload: preload,
+            create: create,
+            update: update
+        }
+    };
+
+    var player;
+
+    //todo: init score
+    //end todo
+
+    //todo: init gameover
+    //end todo
+
+    var game = new Phaser.Game(config);
+
+    function preload ()
+    {
+        //todo: load background image
+        //end todo
+
+        //todo: assign player to a different sprite of your choice in the asset folder
+        //end todo
+
+        //todo: load ground floor
+        //end todo
+
+        //todo: load platforms
+        //end todo
+
+        //todo: load unicorn
+        //end todo
+
+        //todo: load boulder
+        //end todo
+    }
+
+    function create ()
+    {
+        //todo: display background
+        //end todo
+
+        //todo: display a player
+        player = this.physics.add.sprite(320,240,'girl');
+	//end todo
+
+        //todo: create an animation sequence for walking forward
+        //end todo
+
+        //todo: create an animation sequence for walking backward
+        //end todo
+
+        //todo: add an animation sequence for walking left
+        //end todo
+
+        //todo: add an animation sequence for walking right
+        //end todo
+
+        //todo: create animation for stop position
+	//end todo
+
+        //todo: get cursor keys
+        cursors = this.input.keyboard.createCursorKeys();
+	//end todo
+
+        //todo: add boundary to a player
+        //end todo
+
+        //todo: add ground & platforms
+        //end todo
+
+        //todo: add collision between player and platforms
+        //end todo
+
+        //todo: add treasure
+        //end todo
+
+        //todo: add collision between treasure and platforms
+        //end todo
+
+        //todo: add collision between treasure and player
+        //end todo
+
+        //todo: add score
+        //end todo
+
+        //todo: add boulder
+        //end todo
+
+        //todo: add collision between boulders and platforms
+        //end todo
+
+        //todo: add collision between  boulders and player
+        //end todo
+    }
+
+    //todo: add a function to run when the player and unicorns overlap
+    //end todo
+
+    //todo: add a function to run when hit by a boulder
+    //end todo
+
+    function update ()
+    {
+        //todo: game over
+        //end todo
+
+        //todo: associate left and rightkeyboard buttons to corresponding animation sequences
+        //end todo
+
+        //todo: add jumping <- need a platform
+        //end todo
+    }
+</script>
+</body>
+
+</html>
